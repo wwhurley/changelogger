@@ -1,0 +1,20 @@
+---
+classes: 
+  - forumone::varnish
+  - forumone::nodejs
+  - forumone::ruby
+  - memcached
+
+forumone::webserver::webserver: nginx
+
+forumone::php::prefix: "php53u"
+
+forumone::php::modules:
+  - pecl-memcached
+  - xcache
+  - gd
+  
+php::modules: 
+  xcache: 
+    settings: 
+      xcache.size: "96M"

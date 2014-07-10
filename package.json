@@ -1,0 +1,23 @@
+{
+  "name": "changelogger",
+  "version": "0.0.0",
+  "description": "changelogger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wwhurley/changelogger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wwhurley/changelogger/issues"
+  },
+  "homepage": "https://github.com/wwhurley/changelogger",
+  "dependencies": {
+    "github": "^0.2.1"
+  }
+}
+

@@ -1,0 +1,21 @@
+---
+classes:
+  - mongodb::globals
+  - mongodb::server
+  - mongodb::client
+
+mongodb::globals::manage_package_repo: true
+
+forumone::databases: 
+  web: 
+    username: web
+
+forumone::webserver::vhosts:  
+  vagrant: 
+    path: "/vagrant/public"
+
+forumone::solr::collections:  
+  drupal: 
+    order: 1
+
+forumone::ruby::home: "/usr/local/rbenv"
