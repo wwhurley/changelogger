@@ -3,9 +3,14 @@ classes:
   - mongodb::globals
   - mongodb::server
   - mongodb::client
-  - zeromq::czmq
+  - rabbitmq
+  - erlang
 
 mongodb::globals::manage_package_repo: true
+
+erlang:epel_enable: true
+
+rabbitmq::admin_enable: true
 
 forumone::databases: 
   web: 

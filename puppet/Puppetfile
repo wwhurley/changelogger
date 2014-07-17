@@ -4,7 +4,8 @@ mod "puppetlabs/mysql",
   :git => "https://github.com/puppetlabs/puppetlabs-mysql.git",
   :ref => "0.9.0"
 mod "puppetlabs/mongodb", "0.8"
-mod "jhoblitt/zeromq", "0.2"
+mod "puppetlabs/rabbitmq", "4.0.0"
+mod "garethr/erlang", "0.3.0"
 mod "thias/nginx", 
   :git => "https://github.com/thias/puppet-nginx.git",
   :ref => "master"
