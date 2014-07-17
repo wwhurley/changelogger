@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/wwhurley/changelogger",
   "dependencies": {
-    "github": "^0.2.1"
+    "github": "^0.2.1",
+    "octonode": "~0.6.3",
+    "amqp": "~0.2.0"
   }
 }
-
