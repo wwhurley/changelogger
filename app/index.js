@@ -21,6 +21,7 @@ Step(function openConnection() {
 }, function sendMessage(exchange) {
   logger.debug('index: sending message');
   exchange.publish('github', {
-    action : 'getProject'
+    action : 'getProjects',
+    since : config.get('github:since') || 0
   });
 });

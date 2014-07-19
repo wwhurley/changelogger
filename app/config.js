@@ -1,4 +1,5 @@
 var nconf = require('nconf');
+require('nconf-redis');
 
 nconf.argv().env();
 
@@ -11,5 +12,7 @@ nconf.defaults({
 }); 
 
 nconf.file('config/' + nconf.get('environment') + '.json');
+
+nconf.use('redis', nconf.get('redis'));
 
 module.exports = nconf;
