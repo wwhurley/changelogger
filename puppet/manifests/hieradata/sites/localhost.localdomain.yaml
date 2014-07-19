@@ -7,7 +7,6 @@ classes:
   - erlang
 
 mongodb::globals::manage_package_repo: true
-mongodb::server::dbpath: '/vagrant/db'
 mongodb::server::smallfiles: true
 mongodb::server::nojournal: true
 
