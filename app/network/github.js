@@ -39,5 +39,8 @@ module.exports = {
     return this.sendRequest('/repositories', {
       since : since
     });
+  },
+  getReleases : function(full_name) {
+    return this.sendRequest('/repos/' + full_name + '/releases', {});
   }
 }

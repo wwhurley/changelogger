@@ -6,7 +6,7 @@ var logger = require('../logger');
 var releaseSchema = new Schema({
   name : String,
   description : String,
-  date : String,
+  date : Date,
   project : mongoose.Schema.Types.ObjectId,
   data : mongoose.Schema.Types.Mixed
 });
