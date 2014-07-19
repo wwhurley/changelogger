@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
 
   # Add NFS
   if (RUBY_PLATFORM =~ /linux/ or RUBY_PLATFORM =~ /darwin/)
-    config.vm.synced_folder ".", "/vagrant", :nfs => { :mount_options => ["dmode=777","fmode=666","no_root_squash"] }
+    config.vm.synced_folder ".", "/vagrant", :mount_options => [ "dmode=777","fmode=666" ]
   else
     config.vm.synced_folder ".", "/vagrant", :mount_options => [ "dmode=777","fmode=666" ]
   end
