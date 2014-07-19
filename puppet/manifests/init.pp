@@ -1,5 +1,5 @@
-$platform = 'drupal'
-$host = 'f1dev'
+$platform = 'nodejs'
+$host = 'changelogger'
 
 case $::operatingsystem {
   /(?i:redhat|centos)/ : {

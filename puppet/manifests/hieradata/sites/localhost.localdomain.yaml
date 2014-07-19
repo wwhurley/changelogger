@@ -1,15 +1,4 @@
 ---
-classes:
-  - mongodb::globals
-  - mongodb::server
-  - mongodb::client
-  - rabbitmq
-  - erlang
-
-mongodb::globals::manage_package_repo: true
-mongodb::server::smallfiles: true
-mongodb::server::nojournal: true
-
 erlang:epel_enable: true
 
 rabbitmq::admin_enable: true
